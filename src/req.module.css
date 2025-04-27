@@ -1,0 +1,17 @@
+.wrapPage{
+    padding-top: 1vh;
+}
+
+.wrapCards{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.titleName{
+    width: 100%;
+    text-align: center;
+}

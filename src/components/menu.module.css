@@ -1,0 +1,13 @@
+.navLink {
+    padding: 10px;
+    color: #ffd000 !important;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.navLink:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+    background-color: rgba(46, 125, 50, 0.1);
+    border-radius: 4px;
+}

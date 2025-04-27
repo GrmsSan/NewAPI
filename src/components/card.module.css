@@ -1,0 +1,26 @@
+.apiSection{
+    background-attachment: fixed;
+}
+
+.cardsEstilo{
+    background-color: rgb(62, 150, 209);
+    
+}
+
+.cardImg{
+    background-color: rgb(0, 136, 255);
+    border-radius: 10%;
+    padding: 30px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+
+.infoApi{
+    background-color: rgb(122, 158, 189);
+}
+
+.descTitle{
+    background-color: rgb(195, 197, 199);
+}

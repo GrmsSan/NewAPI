@@ -1,0 +1,250 @@
+.pageSection {
+  background-color: rgb(27, 43, 75);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 2vh;
+  position: relative;
+  padding: 1rem;
+}
+
+.backgroundImage {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.pageTitle {
+font-family: "Bebas Neue", sans-serif;
+color: rgb(255, 72, 0);
+font-size: 2rem;
+letter-spacing: 2px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 15%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 2;
+text-align: center;
+padding: 1rem;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.917);
+}
+
+.pageImage {
+  display: flex;
+  height: auto;
+  width: 80vw;
+  position: relative;
+  z-index: 1;
+  padding-top: 2vw;
+}
+
+.pageSlogan {
+  font-family: "Cal Sans", sans-serif;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  padding: 4px;
+  background-color: rgba(22, 22, 22, 0.622);
+  color: white;
+  z-index: 2;
+  position: relative;
+  font-size: 1rem;
+  margin-top: -10%;
+  gap: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageButton {
+background-color: #f0e4c4;
+font-family: "Cascadia Code", sans-serif;
+border: none;
+color: #623900;
+font-weight: 500;
+font-size: 1rem;
+padding: 10px 30px;
+border-radius: 50px;
+cursor: pointer;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+letter-spacing: 1px;
+display: flex;
+flex-direction: column;
+z-index: 2;
+margin-bottom: 7vw;
+}
+.pageButton2 {
+background-color: #f0e4c4;
+font-family: "Cascadia Code", sans-serif;
+border: none;
+color: #623900;
+font-weight: 500;
+font-size: 1rem;
+padding: 10px 30px;
+border-radius: 50px;
+cursor: pointer;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.videoPlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.videoPlay iframe {
+  width: 80%;
+  max-width: 900px;
+  height: 450px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+transform: translateY(-3px);
+}
+
+button:active{
+transform: translateY(0px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+padding: 2rem;
+background-color: rgb(32, 35, 41);
+color: white;
+text-align: center;
+}
+
+footer a {
+color: white;
+text-decoration: none;
+margin: 0 1rem;
+transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+opacity: 0.8;
+color: rgb(255, 0, 0);
+transition: all 150ms ease-in;
+}
+
+@media(width > 770px){
+  .pageSection {
+      display: flex;
+  }
+
+  .backgroundVideo{
+    margin-top: -20%;
+  }
+  .pageTitle{
+    font-size: 5rem;
+    top: 30%;
+}
+
+.pageImage{
+  height: auto;
+  width: 40vw;
+  border-radius: 200px;
+  border-top-left-radius: 4rem;
+  border-bottom-right-radius: 1rem;
+  padding-bottom: 10%;
+  margin-bottom: 2vw;
+}
+
+.pageSlogan{
+position: relative;
+width: 36%;
+margin-left: 56%;
+font-size: 1rem;
+margin-top: -10%;
+
+}
+
+.pageButton{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.videoPlay {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+  width: 90%;
+  max-width: 90vw;
+  height: 600px;
+  margin-left: 5%;
+}
+}
+
+@media(width > 770px) and (width < 1200px) {
+  .pageSection {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5vh;
+  }
+
+  .pageTitle {
+      font-size: 4rem;
+      top: 20%;
+      margin-top: -10%;
+  }
+
+  .pageImage {
+      width: 40vw;
+      margin: 1rem 0;
+  }
+
+  .pageSlogan {
+      width: 60%;
+      margin: 2rem auto;
+      text-align: center;
+      margin-bottom: 2vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .pageButton{
+      margin: 1rem 0;
+  }
+
+  .videoPlay iframe {
+      width: 85%;
+      height: 500px;
+  }
+
+  .pageButton2 {
+      margin: 1rem auto;
+      text-align: center;
+      margin-top: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
